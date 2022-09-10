@@ -31,7 +31,6 @@ const App = () => {
 };
 
 const Wrapper = styled.main`
-  margin: 0 auto;
 `;
 
 export default App;

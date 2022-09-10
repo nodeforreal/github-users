@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { GithubContext } from "../context/GithubContext";
+
 const Followers = () => {
   const { followers } = React.useContext(GithubContext);
   return (

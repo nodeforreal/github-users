@@ -80,7 +80,8 @@ Global Styles
 body {
   font-family: var(--ff-secondary);
   /* background: var(--clr-grey-10); */
-  background: hsl(207, 17%, 90%);
+  /* background: hsl(207, 17%, 90%); */
+  background: hsl(207, 17%, 50%);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -177,20 +178,17 @@ p {
   color: var(--clr-primary-1);
 }
 
-/* section */
-.section {
-  padding: 4rem 0;
-  position: relative;
-}
-
 .section-center {
   width: 90vw;
   margin: 0 auto;
-  max-width: 1170px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width:960px) {
   .section-center {
     width: 95vw;
   }
+}
+
+.section{
+  padding-top: 3rem;
 }

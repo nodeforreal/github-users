@@ -33,7 +33,7 @@ const Search = () => {
             </button>
           )}
         </form>
-       <h3>Requests : {rateLimit.remaining}/{rateLimit.limit}</h3>
+      {!isLoading && <h3>Requests : {rateLimit.remaining}/{rateLimit.limit}</h3>}
       </Wrapper>
     </section>
   );
@@ -52,6 +52,7 @@ const Wrapper = styled.div`
   @media screen and (min-width: 680px) {
     grid-template-columns: 1fr auto;
   }
+
   &::before {
     content: "${({ toggleError }) => toggleError}";
     position: absolute;
@@ -62,7 +63,9 @@ const Wrapper = styled.div`
     font-size: 1.2rem;
     color: hsl(0, 60%, 60%);
   }
+
   .search-section {
+   
     background-color: var(--clr-white);
     padding: 0.5rem;
     border-radius: var(--radius);
@@ -79,6 +82,7 @@ const Wrapper = styled.div`
 
     input {
       height: 100%;
+      width: 100%;
       padding: 0.3rem;
       font-size: 1.2rem;
       outline: none;

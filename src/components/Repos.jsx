@@ -17,7 +17,6 @@ const Repos = () => {
 
 const Wrapper = styled.section`
   width: 100%;
-  margin: -3rem 0;
   display: grid;
   gap: 1.3rem;
   grid-template-columns: 1fr;

@@ -39,7 +39,7 @@ const Info = () => {
   ];
 
   return (
-    <section className="section-center">
+    <section className="section section-center">
       <Wrapper>
         {info.map(({ id, icon, label, value, color }) => {
           return (

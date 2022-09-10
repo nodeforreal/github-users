@@ -20,7 +20,6 @@ const NavBar = () => {
 };
 
 const Wrapper = styled.section`
-  width: 100%;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -32,11 +31,13 @@ const Wrapper = styled.section`
     width: 50px;
     border-radius: 50%;
   }
+
   span {
     display: flex;
     align-items: center;
     column-gap: 0.2rem;
     text-transform: capitalize;
+
     span {
       text-transform: uppercase;
       font-weight: 700;
