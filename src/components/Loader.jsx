@@ -1,10 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
-const Loader = () => {
+const Loader = ({css}) => {
   return (
-    <section className="section section-center">
-      <Wrapper>
+    <section className="section-center">
+      <Wrapper css={css}>
         <Spinner />
       </Wrapper>
     </section>

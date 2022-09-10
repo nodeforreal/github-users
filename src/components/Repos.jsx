@@ -6,10 +6,10 @@ const Repos = () => {
   return (
     <section className="section section-center">
       <Wrapper>
-        <Languages className="chart"/>
-        <MostStared className="chart"/>
-        <StarsPerLanguage className="chart"/>
-        <MostForked className="chart"/>
+        <Languages className="chart" />
+        <MostStared className="chart" />
+        <StarsPerLanguage className="chart" />
+        <MostForked className="chart" />
       </Wrapper>
     </section>
   );
@@ -23,12 +23,12 @@ const Wrapper = styled.section`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 390px);
 
-  @media screen and (min-width:960px) {
+  @media screen and (min-width: 960px) {
     grid-template-rows: repeat(2, 390px);
     grid-template-columns: 40% 60%;
   }
 
-   div{
+  div {
     width: 100% !important;
     border-radius: var(--radius);
   }

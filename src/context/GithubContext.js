@@ -18,7 +18,6 @@ const GithubContextProvider = ({ children }) => {
   const fetchData = async (user = "wesbos") => {
     // set loading
     setIsLoading(true);
-    console.log(toggleError, rateLimit.remaining);
 
     if (rateLimit.remaining === 0) {
       setToggleError("Request limit exceeded.");

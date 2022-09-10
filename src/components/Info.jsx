@@ -71,7 +71,7 @@ const ItemWrapper = styled.div`
   align-items: center;
   column-gap: 1.5rem;
   background-color: var(--clr-white);
-
+  border-radius: var(--radius);
   span{
     width: 3rem;
     height: 3rem;

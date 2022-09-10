@@ -10,7 +10,9 @@ const Dashboard = () => {
       <>
         <NavBar />
         <Search />
-        <Loader />
+        <Loader css={`
+          margin-top:3rem;
+        `}/>
       </>
     );
   }
