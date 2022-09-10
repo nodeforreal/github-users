@@ -48,6 +48,7 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr;
   align-items: center;
   gap: 1.3rem;
+  position: relative;
 
   @media screen and (min-width: 680px) {
     grid-template-columns: 1fr auto;
@@ -58,7 +59,7 @@ const Wrapper = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    transform: translateY(100%);
+    transform: translateY(-100%);
 
     font-size: 1.2rem;
     color: hsl(0, 60%, 60%);
