@@ -12,7 +12,7 @@ const NavBar = () => {
         alt="profile"
       />
       <span>
-        welcome, <span>{ user.nickname}</span>
+        welcome, <strong>{ user.nickname}</strong>
       </span>
       <button onClick={() => logout()}>Logout</button>
     </Wrapper>
@@ -24,12 +24,14 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   column-gap: 1.2rem;
   background-color: var(--clr-white);
 
   img {
     width: 50px;
     border-radius: 50%;
+    align-self: center;
   }
 
   span {
@@ -38,9 +40,8 @@ const Wrapper = styled.section`
     column-gap: 0.2rem;
     text-transform: capitalize;
 
-    span {
+    strong {
       text-transform: uppercase;
-      font-weight: 700;
     }
   }
 
