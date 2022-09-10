@@ -12,9 +12,9 @@ const NavBar = () => {
         alt="profile"
       />
       <span>
-        welcome, <strong>{ user.nickname}</strong>
+        welcome, <strong>{user.name || user.nickname}</strong>
       </span>
-      <button onClick={() => logout()}>Logout</button>
+      <button  onClick={() => logout()}>Logout</button>
     </Wrapper>
   );
 };
@@ -39,7 +39,7 @@ const Wrapper = styled.section`
     align-items: center;
     column-gap: 0.2rem;
     text-transform: capitalize;
-
+  
     strong {
       text-transform: uppercase;
     }
